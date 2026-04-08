@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://lf3-static.bytednsdoc.com/obj/eden-cn/ptj_lp_lp/ljhwZthlkit/docs-gw/bitable_js_sdk_1_0_0.js"></script>
+    <title>批量导入插件</title>
+</head>
+<body>
+    <h3>附件批量导入</h3>
+    <input type="file" id="excelFile" accept=".xlsx" /> <p>1. 选择Excel</p>
+    <input type="file" id="assets" multiple /> <p>2. 选择所有附件</p>
+    <button id="run">开始导入</button>
+    <div id="status"></div>
+
+    <script>
+        // 这里编写刚才我给你的核心逻辑代码，通过 SDK 与多维表交互
+        document.getElementById('run').onclick = async () => {
+            document.getElementById('status').innerText = "正在处理...";
+            // 调用 bitable.base.getActiveTable() 等逻辑...
+            alert("插件已就绪，请按逻辑解析文件");
+        };
+    </script>
+</body>
+</html>
